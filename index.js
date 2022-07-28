@@ -48,7 +48,7 @@ fetch ("https://api.data.gov.sg/v1/environment/psi").then ((psi_data) => {
         radius: 1000
     }).addTo(map);
 
-    circle_west.bindPopup(west_column.toString());
+    circle_west.bindPopup("PSI: "+ west_column.toString());
 
     var circle_east = L.circle([psi_object.region_metadata[2].label_location.latitude, psi_object.region_metadata[2].label_location.longitude], {
         color: 'red',
@@ -57,7 +57,7 @@ fetch ("https://api.data.gov.sg/v1/environment/psi").then ((psi_data) => {
         radius: 1000
     }).addTo(map);
 
-    circle_east.bindPopup(east_column.toString());
+    circle_east.bindPopup("PSI: "+ east_column.toString());
 
     var circle_central = L.circle([psi_object.region_metadata[3].label_location.latitude, psi_object.region_metadata[3].label_location.longitude], {
         color: 'red',
@@ -66,7 +66,7 @@ fetch ("https://api.data.gov.sg/v1/environment/psi").then ((psi_data) => {
         radius: 1000
     }).addTo(map);
 
-    circle_central.bindPopup(central_column.toString());
+    circle_central.bindPopup("PSI: "+ central_column.toString());
 
     var circle_south = L.circle([psi_object.region_metadata[4].label_location.latitude, psi_object.region_metadata[4].label_location.longitude], {
         color: 'red',
@@ -75,7 +75,7 @@ fetch ("https://api.data.gov.sg/v1/environment/psi").then ((psi_data) => {
         radius: 1000
     }).addTo(map);
 
-    circle_south.bindPopup(south_column.toString());
+    circle_south.bindPopup("PSI: "+ south_column.toString());
 
     var circle_north = L.circle([psi_object.region_metadata[5].label_location.latitude, psi_object.region_metadata[5].label_location.longitude], {
         color: 'red',
@@ -84,6 +84,6 @@ fetch ("https://api.data.gov.sg/v1/environment/psi").then ((psi_data) => {
         radius: 1000
     }).addTo(map);
 
-    circle_north.bindPopup(north_column.toString());
+    circle_north.bindPopup("PSI: "+ north_column.toString());
 })
                     
